@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: large;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+.autocomplete{
+  max-width: 400px;
+  margin: 2rem auto;
+  border-radius: .25rem;
+}
+.autocomplete:focus-within{
+  box-shadow: 0px 0px 4px gray;
+}
+.autocomplete input{
+  width: 100%;
+  height: 2.5rem;
+  padding: 1rem;
+  border: none;
+  border-radius: .25rem;
+  background-color: rgb(239, 239, 239);
+}
+.autocomplete input::placeholder{
+  color: rgb(205, 204, 204);
+}.autocomplete input:focus{
+  outline: none;
+  background-color: white;
+}
+.suggestions{
+  background-color:lightgray;
+  max-height: 400px;
+  overflow-y: scroll;
+}
+.suggestions li{
+margin-top: 1px;
+padding: 1rem;
+background-color: white;
+cursor: pointer;
+}
+.suggestions li h3{
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(43, 42, 42);
+  margin-bottom: 10px;
+}
+.suggestions li h4{
+  font-style: italic;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: rgb(44, 38, 38);
+} 
+.suggestions li p{
+  font-size: 16px;
+  color: gray;
+}
+.active{
+  background-color:rgb(255, 240, 200)!important;
+}
+.nouser{
+  border-top: .5px solid gray;
+  text-align: center;
+  padding: 2rem;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.card{
+  background-color:rgb(255, 240, 200) ;
+  width: 50%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: .25rem;
+  box-shadow: 0 0 8px black;
+}
+.card .mr-10{
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color:gray;
+}
